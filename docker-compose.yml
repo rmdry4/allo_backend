@@ -1,0 +1,9 @@
+services:
+  # Spring Boot Application Service
+  spring-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: springboot_container
+    ports:
+      - "8080:8080"
