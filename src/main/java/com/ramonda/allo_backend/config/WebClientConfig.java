@@ -32,6 +32,6 @@ public class WebClientConfig  {
     public BigDecimal serviceChargePercentage(){
         int serviceCharge = Unicode.sumUnicode(this.name);
         BigDecimal serviceChargePercentage = BigDecimal.valueOf(serviceCharge);
-        return serviceChargePercentage;
+        return serviceChargePercentage.multiply(BigDecimal.valueOf(0.01));
     }
 }
